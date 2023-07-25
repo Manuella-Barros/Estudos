@@ -1,0 +1,72 @@
+body{
+    background-color: blueviolet;
+}
+#container_QACard{
+    background-color: white;
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+}
+#container_QACard .titulo{
+    width: 35%;
+    text-align: center;
+}
+#container_QACard .perguntas{
+    width: 65%;
+}
+#container_QACard h1{
+    font-size: 30px;
+}
+#container_QACard p{
+    font-size: 20px;
+}
+
+#container_QACard .perguntas .pergunta{
+    box-shadow: 2px 2px 5px blueviolet;
+    margin: 20px;
+    padding: 1px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container_QACard .perguntas .pergunta button,
+#container_QACard .perguntas .resposta button{
+    text-align: center;
+    margin: 4.5%;
+    height: 20px;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#container_QACard .perguntas .pergunta button{
+    justify-content: flex-end;
+    color: blueviolet;
+    background-color: white;
+}
+#container_QACard .perguntas .pergunta button:hover{
+    color: white;
+    background-color: blueviolet;
+}
+#container_QACard .perguntas .resposta button{
+    justify-content: flex-end;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.712);
+}
+#container_QACard .perguntas .resposta button:hover{
+    color: rgba(137, 43, 226, 0.712);
+    background-color: white;
+
+}
+
+
+#container_QACard .perguntas .resposta{
+    box-shadow: 2px 2px 7px rgb(38, 5, 70);
+    background-color: rgba(137, 43, 226, 0.712);
+    margin: 20px;
+    padding: 1px;
+    padding-left: 20px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}

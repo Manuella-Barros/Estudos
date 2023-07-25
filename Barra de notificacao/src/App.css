@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    margin: 50px auto;
+    width: 650px;
+}
+p{
+    font-size: 20px;
+}
+
+.main_BarraDeNotificacao{
+    background-color: rgb(49, 49, 49);
+    border: 10px solid black;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+}
+.main_BarraDeNotificacao .icon{
+    width: 10%;
+    font-size: 25px;
+    justify-content: center;
+}
+.main_BarraDeNotificacao .conteudo{
+    width: 75%;
+}
+.main_BarraDeNotificacao .botao{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+.main_BarraDeNotificacao .botao button{
+    padding: 8px;
+    margin: 3px;
+    font-size: 15px;
+}
+.main_BarraDeNotificacao .botao button:hover{
+    color: white;
+    background-color: black;
+}
