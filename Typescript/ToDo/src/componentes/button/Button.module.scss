@@ -1,0 +1,23 @@
+@use '../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.main{
+    width: 15%;
+
+    @media (max-width: 500px){
+        width: 70px;
+    }
+}
+
+.main button{
+    width: 100%;
+    padding: $escala-xpp;
+    background-color: $primary-color-4;
+    border: 0;
+    color: $neutral-color-1;
+    font-size: $escala-p;
+    border-radius: $escala-pp;
+
+}
+.main button:hover{
+    background-color: $primary-color-3;
+}

@@ -1,0 +1,14 @@
+@use '../../../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.mainNoTasks{
+    text-align: center;
+    box-shadow: 0px -1px 1.7px $neutral-color-5;
+    padding: $escala-m;
+
+    p{
+        font-size: $escala-xx-gg;
+        color: $neutral-color-3;
+        padding: $escala-pp;
+        font-weight: lighter;
+    }
+}

@@ -1,0 +1,12 @@
+.mainSingleTaks {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  background-color: #262626;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+.mainSingleTaks .task {
+  padding-inline: 0.875rem;
+  color: #D9D9D9;
+}/*# sourceMappingURL=singleTasks.module.css.map */

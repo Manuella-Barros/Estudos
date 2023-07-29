@@ -1,0 +1,15 @@
+@use '../../../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.mainSingleTaks {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background-color: $neutral-color-5;
+    padding: $escala-p;
+    border-radius: 20px;
+    margin-bottom: $escala-m;
+    
+    .task{
+        padding-inline: $escala-pp;
+        color: $neutral-color-2;
+    }
+}

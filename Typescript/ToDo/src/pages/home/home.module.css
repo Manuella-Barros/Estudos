@@ -1,0 +1,14 @@
+.main {
+  width: 40%;
+  margin: -1rem auto;
+}
+@media (max-width: 1060px) {
+  .main {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    width: 80%;
+  }
+}/*# sourceMappingURL=home.module.css.map */

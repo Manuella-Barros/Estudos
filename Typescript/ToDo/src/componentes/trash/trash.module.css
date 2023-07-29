@@ -1,0 +1,7 @@
+.trash {
+  color: #808080;
+  font-size: 1.25rem;
+}
+.trash :hover {
+  color: #E25858;
+}/*# sourceMappingURL=trash.module.css.map */

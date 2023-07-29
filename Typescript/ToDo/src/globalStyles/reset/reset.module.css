@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1A1A;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: #808080;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #333333;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=reset.module.css.map */

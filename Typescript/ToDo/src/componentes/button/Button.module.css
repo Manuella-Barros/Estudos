@@ -1,0 +1,22 @@
+.main {
+  width: 15%;
+}
+@media (max-width: 500px) {
+  .main {
+    width: 70px;
+  }
+}
+
+.main button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1E6F9F;
+  border: 0;
+  color: #F2F2F2;
+  font-size: 1rem;
+  border-radius: 0.875rem;
+}
+
+.main button:hover {
+  background-color: #4EA8DE;
+}/*# sourceMappingURL=Button.module.css.map */

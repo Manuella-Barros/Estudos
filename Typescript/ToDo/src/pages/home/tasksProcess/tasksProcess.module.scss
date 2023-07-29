@@ -1,0 +1,45 @@
+@use '../../../globalStyles/variables/globalVariables.module.scss' as *;
+
+
+.mainTaksProcess {
+    margin-top: $escala-gg;
+    margin-bottom: $escala-m;
+    justify-content: space-between;
+    display: flex;
+
+    section {
+        display: flex;
+
+        @media (max-width: 530px) {
+            text-align: center;
+            display: block;
+
+            p{
+                margin: auto;
+            }
+        }        
+
+        p:nth-child(1){
+            padding-right: $escala-xpp;
+        }
+        .createdTasks{
+            color: $primary-color-4;
+        }
+        .completedTasks{
+            color: $primary-color-2;
+        }
+        .numTasks{
+            color: $neutral-color-2;
+            background-color: $neutral-color-4;
+            padding-inline: $escala-xpp;
+            border-radius: $escala-xx-plus;
+            font-size: $escala-p;
+            text-align: center;
+
+            @media (max-width: 530px) {
+                width: $escala-xgg;
+            }
+        }
+    }
+}
+

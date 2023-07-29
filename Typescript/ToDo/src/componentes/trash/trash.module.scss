@@ -1,0 +1,9 @@
+@use '../../globalStyles//variables/globalVariables.module.scss' as *;
+
+.trash{
+    color: $neutral-color-3;
+    font-size: $escala-m;    
+    :hover{
+        color: $secondary-color-1;
+    }
+}

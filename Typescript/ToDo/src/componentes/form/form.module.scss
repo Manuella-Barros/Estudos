@@ -1,0 +1,6 @@
+@use '../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.main{
+    justify-content: space-between;
+    display: flex;
+}

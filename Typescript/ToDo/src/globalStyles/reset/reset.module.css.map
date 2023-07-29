@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.module.scss","reset.module.css","../variables/globalVariables.module.scss"],"names":[],"mappings":"AAEA;EACI,UAAA;EACA,SAAA;EACA,sBAAA;ACDJ;;ADGA;EACI,yBEuBc;EFtBd,gCELM;ADKV;;ADEA;EACI,kBEEO;EFDP,cEec;ADdlB;;ADCA;EACI,eEDO;EFEP,cEYc;ADVlB;;ADAA;EACI,kBENO;ADSX;;ADAA;EACI;IACI,kBERK;EDWX;AACF","file":"reset.module.css"}

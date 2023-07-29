@@ -1,0 +1,13 @@
+@use '../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.main {
+    width: 40%;
+    margin: -$escala-p auto;
+
+    @media (max-width: 1060px) {
+        width: 60%;
+    }
+    @media (max-width: 700px) {
+        width: 80%;
+    }
+}

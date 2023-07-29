@@ -1,0 +1,19 @@
+@use '../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.main{
+    width: 82%;
+}
+.main input{
+    width: 100%;
+    padding: $escala-xpp;
+    background-color: $neutral-color-6;
+    border: 1px solid $neutral-color-7;
+    color: $neutral-color-2;
+    font-size: $escala-p;
+    border-radius: $escala-pp;
+}
+.main input:focus{
+    outline: 1px solid $primary-color-2;
+    color: $neutral-color-2;
+    font-size: $escala-p;
+}

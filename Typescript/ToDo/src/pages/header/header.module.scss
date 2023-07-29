@@ -1,0 +1,8 @@
+@use '../../globalStyles/variables/globalVariables.module.scss' as *;
+
+.body{
+    background-color: $neutral-color-7;
+    text-align: center;
+    justify-content: center;
+    padding: $escala-g 0;
+}

@@ -1,0 +1,40 @@
+.mainTaksProcess {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  justify-content: space-between;
+  display: flex;
+}
+.mainTaksProcess section {
+  display: flex;
+}
+@media (max-width: 530px) {
+  .mainTaksProcess section {
+    text-align: center;
+    display: block;
+  }
+  .mainTaksProcess section p {
+    margin: auto;
+  }
+}
+.mainTaksProcess section p:nth-child(1) {
+  padding-right: 0.75rem;
+}
+.mainTaksProcess section .createdTasks {
+  color: #1E6F9F;
+}
+.mainTaksProcess section .completedTasks {
+  color: #5E60CE;
+}
+.mainTaksProcess section .numTasks {
+  color: #D9D9D9;
+  background-color: #333333;
+  padding-inline: 0.75rem;
+  border-radius: 16rem;
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width: 530px) {
+  .mainTaksProcess section .numTasks {
+    width: 3rem;
+  }
+}/*# sourceMappingURL=tasksProcess.module.css.map */
