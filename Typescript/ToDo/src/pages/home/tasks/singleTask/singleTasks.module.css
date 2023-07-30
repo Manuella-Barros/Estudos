@@ -6,7 +6,12 @@
   border-radius: 20px;
   margin-bottom: 1.25rem;
 }
-.mainSingleTaks .task {
+.mainSingleTaks .taskfalse {
   padding-inline: 0.875rem;
   color: #D9D9D9;
+}
+.mainSingleTaks .tasktrue {
+  padding-inline: 0.875rem;
+  color: #808080;
+  text-decoration: line-through;
 }/*# sourceMappingURL=singleTasks.module.css.map */

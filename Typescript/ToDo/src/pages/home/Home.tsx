@@ -2,37 +2,49 @@ import style from './home.module.css';
 import Form from "../../componentes/form/Form";
 import TasksProcess from "./tasksProcess/TasksProcess";
 import Tasks from './tasks/Tasks';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Home() {
-    const [task, setTask] = useState<string[]>([]);
-    const [auxTask, setAuxTask] = useState<string>('');
-    const [checkCount, setCheckCount] = useState<number>(0);
-
-    function addAuxTask(e: React.ChangeEvent<HTMLFormElement> ){
-        e.preventDefault();
-        
-        setAuxTask(e.target.value);
-    }
+    const [tasks, setTasks] = useState<[]>([]);    
+    const [clickCount, setClickCount] = useState<number>(0);
     
-    function addTask(e: React.FormEvent){
-        e.preventDefault();
-        setTask(prevValue => [...prevValue, auxTask])
+    if(tasks.length > 0){
+        localStorage.setItem('tasksList', JSON.stringify(tasks))
+    }
+    useEffect(() => {
+        if(localStorage.getItem('tasksList')){
+            const tasksLocalStorage = JSON.parse(localStorage.getItem('tasksList'))
+            setTasks(tasksLocalStorage)
+        }    
+    }, [])
+
+    // if(localStorage.getItem('tasksList')){
+    //     setTasks(JSON.parse(localStorage.getItem('tasksList')));
+    // } else{
+    //     if(tasks.length > 0){
+    //         localStorage.setItem('tasksList', JSON.stringify(tasks))
+    //     }
+    // }
+
+    function addClick(){ // Conta a quantidade de tasks completadas
+        setClickCount(0);
+
+        tasks.map(task => {
+            if(task.isCompleted == true){
+                setClickCount(prevValue => prevValue + 1)
+            }
+        })
     }
 
-    function checkTask(e: React.MouseEvent){
-        if((e.target as HTMLInputElement).checked){
-            setCheckCount(prevValue => prevValue + 1);
-        } else{
-            setCheckCount(prevValue => prevValue - 1);
-        }
-    }
+    useEffect(() => {
+        addClick()
+    },[tasks])
 
     return (
         <main className={style.main}>
-            <Form addAuxTask={addAuxTask} addTask={addTask}/>
-            <TasksProcess task={task} checkCount={checkCount}/>
-            <Tasks task={task} checkTask={checkTask} setTask={setTask}/>
+            <Form setTasks={setTasks}/>
+            <TasksProcess tasks={tasks} clickCount={clickCount}/>
+            <Tasks tasks={tasks} addClick={addClick} setTasks={setTasks}/>
         </main>
     );
 }

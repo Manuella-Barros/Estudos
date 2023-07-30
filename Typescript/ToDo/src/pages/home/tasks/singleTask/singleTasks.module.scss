@@ -8,8 +8,13 @@
     border-radius: 20px;
     margin-bottom: $escala-m;
     
-    .task{
+    .taskfalse{
         padding-inline: $escala-pp;
         color: $neutral-color-2;
+    }
+    .tasktrue{
+        padding-inline: $escala-pp;
+        color: $neutral-color-3;
+        text-decoration: line-through;
     }
 }

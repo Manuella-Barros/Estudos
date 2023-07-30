@@ -1,20 +1,20 @@
 import style from './tasksProcess.module.css';
 
 interface TasksProcessProps{
-    task: string[],
-    checkCount: number,
+    tasks: [],
+    clickCount: number
 }
-
-function TasksProcess({task, checkCount}: TasksProcessProps) {
+ 
+function TasksProcess({ tasks, clickCount }: TasksProcessProps) {    
     return (
         <article className={style.mainTaksProcess}>
             <section>
                 <p className={style.createdTasks}>Tarefas criadas</p>
-                <p className={style.numTasks}>{task.length}</p>
+                <p className={style.numTasks}>{tasks.length}</p>
             </section>
             <section>
                 <p className={style.completedTasks}>Tarefas concluidas</p>
-                <p className={style.numTasks}>{checkCount}</p>
+                <p className={style.numTasks}>{clickCount}</p>
             </section>
         </article>
     );

@@ -2,19 +2,12 @@ import Checkbox from "../../../../componentes/checkbox/Checkbox";
 import Trash from "../../../../componentes/trash/Trash";
 import style from './singleTasks.module.css';
 
-interface PropsSingleTask{
-    taskText:string,
-    checkTask: (e: React.MouseEvent) => void
-}
-
-function SingleTask({taskText, checkTask, removeTask}:PropsSingleTask) {
-    //console.log(taskText)
-
+function SingleTask({ removeTask, id, taskText, getCheck, isCompleted }) {
     return (
         <section className={style.mainSingleTaks}>
-            <Checkbox onClick={checkTask}/>
-            <p className={style.task}>{taskText}</p>
-            <Trash onClick={() => removeTask(taskText)}/>
+            <Checkbox onClick={(e) => getCheck(e, id)}/>
+            <p className={style[`task${isCompleted}`]}>{taskText}</p>
+            <Trash onClick={(e) => removeTask(e, id)}/>
         </section>
     );
 }
