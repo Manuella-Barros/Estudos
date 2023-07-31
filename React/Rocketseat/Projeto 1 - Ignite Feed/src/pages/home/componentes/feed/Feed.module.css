@@ -1,0 +1,16 @@
+@import '../../../../variaveis.css';
+
+.main{
+    width: 65%;
+}
+
+@media (max-width: 900px) {
+    .main {
+        width: 70%
+    }
+}
+@media (max-width: 640px){
+    .main {
+        width: 90%
+    }
+}

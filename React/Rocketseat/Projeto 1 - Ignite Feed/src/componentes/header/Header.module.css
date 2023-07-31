@@ -1,0 +1,15 @@
+@import "../../variaveis.css";
+
+.header{
+    background-color: var(--cor-neutra-7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--esp-pp);
+}
+
+.header h1{
+    color: var(--cor-neutra-1);
+    justify-items: center;
+    padding-inline: var(--esp-xpp);
+}

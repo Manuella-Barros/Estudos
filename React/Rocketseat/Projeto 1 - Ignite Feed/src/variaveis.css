@@ -1,0 +1,41 @@
+:root {
+    --cor-neutra-1: #fff;
+    --cor-neutra-3: #c4c4cc;
+    --cor-neutra-2: #e1e1e6;
+    --cor-neutra-4: #8d8d99;
+
+    --cor-neutra-5: #7c7c8a;
+    --cor-neutra-6: #323238;
+    --cor-neutra-7: #202024;
+    --cor-neutra-8: #121214;
+
+    --cor-primaria: #00b373;
+    --cor-secundaria: #00975f;
+
+    --fonte-1: 'Roboto', sans-serif;
+
+    --font-tamanho-xgplus: 12.5rem; /*200 */
+    --font-tamanho-xxgg: 8rem; /* 128 */
+    --font-tamanho-xxg: 6rem; /* 96 */
+    --font-tamanho-xg: 4.5rem; /* 72 */
+    --font-tamanho-g: 3rem; /* 48 */
+    --font-tamanho-m: 2rem; /* 32 */
+    --font-tamanho-p: 1.4rem; /* 22,4 */
+    --font-tamanho-pp: 1.2rem; /* 20,8 */
+    --font-tamanho-xpp: 1rem; /* 16 */
+    --font-tamanho-xxpp: 0.875rem; /* 14 */
+    --font-tamanho-xxxpp: 0.75rem;/* 12 */
+
+
+    --cor-1: #176B87;
+    --cor-2: #1E1E1E;
+    --cor-3: #F0F0F0;
+
+    --esp-xxg: 15%;
+    --esp-xg: 12%;
+    --esp-g: 8%;
+    --esp-m: 5%;
+    --esp-p: 3%;
+    --esp-pp: 1.5%;
+    --esp-xpp: 1%;
+}

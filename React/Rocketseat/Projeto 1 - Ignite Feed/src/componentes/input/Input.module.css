@@ -1,0 +1,17 @@
+@import '../../variaveis.css';
+
+.input{
+    background-color: var(--cor-neutra-8);
+    border: 2px solid var(--cor-secundaria);
+    padding: var(--font-tamanho-xxpp);
+    color: var(--cor-neutra-1);
+    margin-block: var(--esp-p);
+    margin-right: var(--esp-p);
+    width: 80%;
+
+}
+@media(max-width: 1160px){
+    .input{
+        width: 75%;
+    }
+}

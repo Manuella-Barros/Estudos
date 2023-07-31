@@ -1,0 +1,55 @@
+@import "./variaveis.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--cor-neutra-8);
+}
+p{
+  font-size: var(--font-tamanho-pp);
+}
+h1, h2, h3, h4, p, button, input{
+  font-family: var(--fonte-1);
+  color: var(--cor-neutra-1);
+}
+h1{
+  font-size: var(--font-tamanho-m);
+}
+h2{
+  font-size: var(--font-tamanho-p);
+}
+h3{
+  font-size: var(--font-tamanho-pp);
+  color: var(--cor-neutra-5);
+}
+p{
+  font-size: var(--font-tamanho-pp);
+}
+
+@media (max-width: 900px){
+  main{
+    align-items: start;
+  }
+  :root{
+    font-size: 14px;
+  }
+} 
+@media (max-width: 640px){
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+@media (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+  main {
+    width: 100%;
+  }
+}

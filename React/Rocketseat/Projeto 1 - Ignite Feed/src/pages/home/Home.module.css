@@ -1,0 +1,21 @@
+@import '../../variaveis.css'; 
+
+.main_home{
+    justify-content: space-between;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-block: var(--esp-pp);
+    text-align: center;
+}
+
+@media (max-width: 400px){
+    .main_home {
+        width: 90%;
+    }
+}
+@media (max-width: 330px){
+    .main_home {
+        width: 100%;
+    }
+}

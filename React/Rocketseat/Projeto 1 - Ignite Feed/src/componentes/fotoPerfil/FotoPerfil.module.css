@@ -1,0 +1,7 @@
+@import '../../variaveis.css';
+
+picture img {
+    border: 3px solid green;
+    width: var(--font-tamanho-xg);
+    border-radius: var(--font-tamanho-xxpp);
+}

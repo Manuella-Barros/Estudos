@@ -1,0 +1,51 @@
+@import '../../variaveis.css';
+
+.button1, .button2{
+    font-size: var(--font-tamanho-xpp);
+    border-radius: 10%;
+}
+
+.button1 {
+    background-color: rgba(240, 248, 255, 0);
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    margin-block: var(--esp-m);
+    padding: var(--esp-p);
+}
+.button1:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-neutra-1);
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: var(--cor-secundaria);
+    border: 5px solid var(--cor-secundaria);
+    color: var(--cor-neutra-1);
+    margin-block: var(--esp-pp);
+    padding-inline: var(--esp-xpp);
+    padding-block: var(--esp-pp);
+    width: 17%;
+}
+.button2:hover {
+    background-color: var(--cor-primaria);
+    border: 5px solid var(--cor-primaria);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .button2 {
+        width: 20%;
+    }
+}
+@media (max-width: 640px) {
+    .button1 {
+        margin-block: var(--esp-m);
+        padding: var(--esp-p);
+    }
+}
+@media (max-width: 460px) {
+    .button2 {
+        width: 22%;
+    }
+}

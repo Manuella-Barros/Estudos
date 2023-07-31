@@ -1,0 +1,33 @@
+@import '../../../../variaveis.css';
+
+.mainPost {
+    padding: var(--esp-p);
+    margin-bottom: var(--esp-p);
+    background-color: var(--cor-neutra-7);
+    border-radius: 3%;
+}
+.mainPost .headerPost{
+    display: flex;
+    justify-content: space-between;
+}
+.mainPost .headerPost .horario{
+    width: 40%;
+}
+.mainPost .headerPost .usuario{
+    display: flex;
+    width: 60%;
+}
+.mainPost .headerPost .usuario .descricao{
+    padding-left: var(--esp-p);
+}
+
+.bodyPost{
+    padding-block: var(--esp-m);
+    text-align: left;
+    box-shadow: 0px 1px black;
+}
+
+.footerPost{
+    padding-block: var(--esp-pp);
+    text-align: left;
+}
