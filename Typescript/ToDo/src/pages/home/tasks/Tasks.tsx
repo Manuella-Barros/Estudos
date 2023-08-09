@@ -1,20 +1,15 @@
+import { tasksProps } from '../Home';
 import NoTasks from './noTasks/NoTasks';
 import SingleTask from './singleTask/SingleTask';
 
-interface setTasksProps{
-    id: number,
-    taskText: string,
-    isCompleted: boolean
-}
-
 interface TasksProps{
-    tasks: [],
+    tasks: tasksProps[],
     addClick: () => void,
-    setTasks: React.Dispatch<React.SetStateAction<setTasksProps[]>>
+    setTasks: React.Dispatch<React.SetStateAction<tasksProps[]>>
 }
 
 function Tasks({ tasks, addClick, setTasks }: TasksProps) {
-    function getCheck(e: React.MouseEvent, id: number){  // pega as info da task clicada
+    function getCheck(e: React.MouseEvent, id: number | string){  // pega as info da task clicada
         let checkIsClicked = (e.target as HTMLInputElement).checked; //guarda ta cheked ou n
 
         tasks.map(task => {
@@ -25,7 +20,7 @@ function Tasks({ tasks, addClick, setTasks }: TasksProps) {
         })
     }
 
-    function removeTask(e: React.MouseEvent<HTMLButtonElement>, id){
+    function removeTask(id: number | string){
         setTasks(
             tasks.filter(task => { // Retorna só oq n foi removido de acordo com o id
                 if(task.id != id){
@@ -50,15 +45,7 @@ function Tasks({ tasks, addClick, setTasks }: TasksProps) {
                         />
                     })
                 : <NoTasks/>
-            }
-            {
-                // task.length > 0
-                // ?   task.map((text,i) =>{
-                //         return <SingleTask key={i} taskText={text} checkTask={checkTask} removeTask={removeTask}/>
-                //     })
-                // : <NoTasks/>
-            }
-            
+            }     
         </article>
     );
 }

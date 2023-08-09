@@ -1,7 +1,8 @@
+import { tasksProps } from '../Home';
 import style from './tasksProcess.module.css';
 
 interface TasksProcessProps{
-    tasks: [],
+    tasks: tasksProps[],
     clickCount: number
 }
  

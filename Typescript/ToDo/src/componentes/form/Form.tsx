@@ -4,7 +4,7 @@ import style from './form.module.css';
 import { useState } from 'react';
 
 interface setTasksProps{
-    id: number,
+    id: string | number,
     taskText: string,
     isCompleted: boolean
 }
@@ -14,11 +14,11 @@ interface FormProps{
 }
 
 function Form({ setTasks }: FormProps) {
-    const [taskText, setTaskText] = useState('');
-    let idAux;
+    const [taskText, setTaskText] = useState<string>('');
+    let idAux: string | number;
 
     if(localStorage.getItem('idAux')){
-        idAux = parseFloat(localStorage.getItem('idAux'));
+        idAux = parseFloat(localStorage.getItem('idAux')!);
     } else{
         localStorage.setItem('idAux', '0');
     }
@@ -38,7 +38,7 @@ function Form({ setTasks }: FormProps) {
             ]
         )
         
-        localStorage.setItem('idAux', `${idAux += 1}`);
+        localStorage.setItem('idAux', `${(idAux as number) += 1}`);
     }
 
     return (
