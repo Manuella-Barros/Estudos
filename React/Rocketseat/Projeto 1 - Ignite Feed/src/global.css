@@ -5,7 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+:focus{
+  box-shadow: 0px 0px 5px var(--cor-secundaria);
+  outline: 0;
+}
 body{
   background-color: var(--cor-neutra-8);
 }
@@ -47,7 +50,7 @@ p{
 } 
 @media (max-width: 500px) {
   :root {
-    font-size: 12px;
+    font-size: 12.5px;
   }
   main {
     width: 100%;

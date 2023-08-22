@@ -44,6 +44,12 @@
         padding: var(--esp-p);
     }
 }
+@media (max-width: 500px){
+    .button1 {
+        margin-block: 1rem;
+        padding: var(--esp-p);
+    }
+}
 @media (max-width: 460px) {
     .button2 {
         width: 22%;

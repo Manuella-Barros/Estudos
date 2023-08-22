@@ -1,5 +1,8 @@
 @import '../../../../../variaveis.css';
 
+:focus{
+    box-shadow: none;
+}
 .main{
     display: flex;
     margin-block: var(--esp-p);
@@ -11,7 +14,6 @@
 }
 
 .main .comentarioContainer{
-    padding-inline: var(--esp-p);
     width: 85%;
 }
 .main .comentarioContainer .body{
@@ -50,21 +52,3 @@
         width: 80%;
     }
 }
-
-
-/* 
-@media (max-width: 920px){
-    .main .comentarioContainer {
-        margin-left: var(--esp-gg);
-    }
-}
-@media(max-width: 1070px) {
-    .main .comentarioContainer{
-        margin-left: var(--esp-m);
-    }
-}
-@media (max-width: 640px) {
-    .main .comentarioContainer {
-        width: 80%;
-    }
-} */

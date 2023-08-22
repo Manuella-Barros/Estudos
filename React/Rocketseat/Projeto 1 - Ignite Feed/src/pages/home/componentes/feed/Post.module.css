@@ -31,3 +31,6 @@
     padding-block: var(--esp-pp);
     text-align: left;
 }
+.footerPost h2 {
+    font-size: var(--font-tamanho-pp);
+}

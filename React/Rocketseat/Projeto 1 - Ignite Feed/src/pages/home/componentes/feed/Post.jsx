@@ -31,20 +31,6 @@ function Post({ setComentarios, comentarios, author, role, elapsedTime, profileP
                     return {...prevValue, [id]: comentarios[id]}
                 })
 
-                // setComentarios(prevValue => {
-                //     return {
-                //         ...prevValue,
-                //         [id]: comentarios[id].unshift({
-                //             id: 4,
-                //             author: "Maria",
-                //             elapsedTime: "Recente",
-                //             textComment: comentarioNovo,
-                //             likes: 0,
-                //             profilePicture: "/imagens/profileIcon.png",
-                //         }),
-                //     };
-                // })
-
                 break;
         }
     }        

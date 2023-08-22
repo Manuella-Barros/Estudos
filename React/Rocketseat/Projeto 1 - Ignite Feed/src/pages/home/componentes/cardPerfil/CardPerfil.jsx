@@ -31,7 +31,9 @@ function CardPerfil() {
     return (
         <article className={style.main}>
             <section className={style.header}>
-                <FotoPerfil src={"./imagens/profileIcon.png"} />
+                <div className={style.imgContainer}>
+                    <FotoPerfil src={"./imagens/profileIcon.png"} />
+                </div>
             </section>
             <section className={style.body}>
                 <h2>{userName}</h2>
